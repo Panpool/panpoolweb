@@ -37,9 +37,13 @@
     color: white;
     }
     
+    .ukryte, .pokaz {
+    font-size: 30px;
+    }
+    
     @media only screen and (max-width:620px) {
   /* For mobile phones: */
-  .button, .main {
+  .button, .main, .ukryte, .pokaz {
     width: 100%;
     text-align: left;
   }
@@ -52,7 +56,7 @@
  
 <div class="main">GitHub</div>
 
-<div onclick="myFunction()" class="pokaz">Przydatne linki pokaż/ukryj</div> 
+  <div class="pokaż">Przydatne linki</div><div onclick="myFunction()" class="pokaz">pokaż/ukryj</div> 
 
 <div class="ukryte" id="ukryte">teskt tutaj</div>
 
