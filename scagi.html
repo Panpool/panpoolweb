@@ -1,4 +1,70 @@
 <!docktype html>
 <html>
-<p>siea</p>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.5">
+  <link rel="icon" href="favikon.png" type="image/x-icon"/>
+  <link rel="shortcut icon" href="favkcon.png" type="image/x-icon"/>
+  <title>PanPoolWeb - Ściągi</title>
+  
+  <style>
+    @import url('https://raw.githack.com/Panpool/strony/master/main.css');
+    
+    .main {
+    font-size: 60px;
+    font-familly: Ubuntu;
+    text-align: left;
+    }
+    
+    .button {
+    width: 250px;
+    background-color: white; 
+    border: solid 2px;
+    border-color: black;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    margin: 8px 4px;
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    user-select: none
+    }
+   
+    .button:hover {
+    background-color: black;
+    color: white;
+    }
+    
+    @media only screen and (max-width:620px) {
+  /* For mobile phones: */
+  .button, .main {
+    width: 100%;
+    text-align: center;
+  }
+    
+  </style>
+  
+</head>
+<body>
+
+  <div class="main">PanPoolWeb</div>
+  
+  <button class="button" onclick="scagi()">Ściągi</button>
+  <button class="button" onclick="lekcje()">Lekcje</button>
+  <button class="button" onclick="info()">Info</button>  
+  <script>
+ function scagi () {
+ window.location.assign("scagi") 
+ }
+ function lekcje () {
+ window.location.assign("lekcje") 
+ }
+ function info () {
+ window.location.assign("info") 
+ }
+  </script>
+
+</body 
 </html>
