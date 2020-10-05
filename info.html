@@ -52,7 +52,38 @@
   <div class="main">Info</div>
   
   <button class="button" onclick="github()">GitHub</button>
-  
+ 
+<input type="file" id="inpFile" multiple>
+
+<button id="btnUpload">Upload Files</button>
+
+<script>
+
+const inpFile = document.getElementById("inpFile");
+
+const btnUpload = document.getElementById("btnUpload"); 
+
+btnUpload.addEventListener("click", function () {
+
+const xhr = new XMLHttpRequest();
+
+const formData = new FormData();
+
+for (const file of inpFile.files) { 
+
+formData.append("myFiles[]", file);
+
+}
+
+xhr.open("post", "upload.php");
+
+xhr.send(formData);
+
+});
+
+</script>
+
+
   <script>
  function github () {
  window.location.assign("github") 
