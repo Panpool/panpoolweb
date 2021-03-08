@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <title>Siea</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://raw.githack.com/Panpool/strony/master/tabela.js"></script>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    @import url('https://raw.githack.com/Panpool/strony/master/styletable.css');
+
+     div.side {
+        opacity: 00%;
+        color: rgb(73, 248, 3); 
+        font-family: lato;
+        font-size: 25px;
+        animation-name: side;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    @keyframes side {
+     0% {color: rgb(255, 0, 0);}
+     12% {color: rgb(255, 238, 0);}
+     24% {color: rgb(72, 255, 0);}
+     36% {color: rgb(0, 255, 221);}
+     50% {color: rgb(0, 8, 255);}
+     64% {color: rgb(234, 0, 255);}
+     78% {color: rgb(255, 0, 76);}
+     92% {color: rgb(255, 0, 0);}
+    }
+    #myTable {
+        color: black;
+    }
+
+    </style> 
+    
+</head>
+<body>
+
+<input id="myInput" type="text" placeholder="Wyszukaj słówko...">
+
+<table id="myTable">
+    <tr class="header">
+    <th style="width:25%;"></th>
+    <th style="width:25%;"></th>
+
+    </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</table>
+    
+        <div class="side">Ala ma kota Ewa gotuje bardo dzobrze. Idzie Grześ przez wieś. Niesie worek z piaskiem. 
+    <p>za Grzesiem piasek sypie się. Ola idzie do przedszkola. Franek niesie teczkę. Jak stworzyć <p>stronę internteową? Znacznikli otwierające i zamykające  </div>
+    
+</body>
+</html>
